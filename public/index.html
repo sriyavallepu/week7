@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e9ecef; /* Light grey background */
+            color: #495057;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 60px;
+        }
+        .main {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .box {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .box:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(38, 143, 255, 0.2);
+            outline: none;
+        }
+        #submit {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 main">
+                <form action="/sign_up" method="POST">
+                    <h2>Registration Form</h2>
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
+                    <input type="text" class="box" id="age" name="age" placeholder="Age" required />
+                    <input type="email" class="box" id="email" name="email" placeholder="Email" required />
+                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
+                    <input type="text" class="box" id="gender" name="gender" placeholder="Gender" required />
+                    <input type="password" class="box" id="password" name="password" placeholder="Password" required />
+                    <input type="submit" value="Submit" id="submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

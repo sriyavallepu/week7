@@ -1,0 +1,23 @@
+{
+  "name": "registration-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.5",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "node-fetch": "^3.3.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3"
+  }
+}
